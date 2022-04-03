@@ -63,11 +63,14 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  * def create had Toys.create instead of Toy which caused an error. I corrected the type-o.
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  * def update did not render json, so I added that line of code.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  * route was not registerd in config/routes so I added :destroy
